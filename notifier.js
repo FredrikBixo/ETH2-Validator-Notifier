@@ -43,7 +43,7 @@ var requestLoop = setInterval(function(){
             // Balance decreased!
             // Send SMS
             const from = 'Vonage SMS API';
-            const to = '46702413144';
+            const to = 'ENTER PHONE NUMBER';
             const text = 'Balance for validator ' + index + ' decreased!';
 
             nexmo.message.sendSms(from, to, text);
