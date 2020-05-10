@@ -5,9 +5,9 @@ A script that alerts you when your Ethereum validator is down.
 The notifier uses API:s from Prysmatic to track the balance of your validators. It then sends an sms to a specified phone number using the nexmo API.
 
 # How do I start the service?
-1. Create an account on Nexmo
-2. Copy your API-key from the website.
-3. Paste the API key in notifier.js
+1. Create an account on [Nexmo](https://developer.nexmo.com/)
+2. Copy your API key and secret from the website.
+3. Paste the API key and secret in notifier.js
 ```javascript
 const nexmo = new Nexmo({
   apiKey: 'nexmo apiKey',
