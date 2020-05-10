@@ -6,6 +6,9 @@ const nexmo = new Nexmo({
   apiSecret: 'nexmo apiSecret',
 });
 
+// Your phone number
+phone_number = "Enter phone number"
+
 // Add the indicies of the validators you want to track in this array.
 validators = ['146','3'];
 
@@ -43,7 +46,7 @@ var requestLoop = setInterval(function(){
             // Balance decreased!
             // Send SMS
             const from = 'Vonage SMS API';
-            const to = '46702413144';
+            const to = phone_number;
             const text = 'Balance for validator ' + index + ' decreased!';
 
             nexmo.message.sendSms(from, to, text);
